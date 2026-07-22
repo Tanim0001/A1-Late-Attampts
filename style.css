@@ -12,7 +12,7 @@ body{
     align-items: center;
     justify-content: space-between;
     height: 90px;
-    padding: 70px;
+    padding: 50px 65px;
 }
 .nav-links ul{
     display: flex;
@@ -32,4 +32,47 @@ body{
     text-decoration: none;
     border: none;
     font-size: 12px;
+}
+.hero{
+    background-image: linear-gradient(
+       rgba(0,0,0,0.9),
+       rgba(0,0,0,0.5)),
+    url(./banner.jpg);    
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    height: 620px;
+}
+.hero-content{
+    color: #ffff;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.hero-content h1{
+    margin-bottom: 25px;
+    font-size: 65px;
+}
+.hero-content p{
+    color: #ffff;
+    font-size: 19px;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+.hero-content button{
+    background-color: #1d4ed8;
+    color: #ffff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    margin-top: 200px;
+    font-size: 19px;
+    font-weight: bold;
+
 }
