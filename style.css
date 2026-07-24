@@ -5,7 +5,9 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 .navbar{
     display: flex;
@@ -33,11 +35,12 @@ body{
     border: none;
     font-size: 12px;
 }
-.hero{
-    background-image: linear-gradient(
-       rgba(0,0,0,0.9),
-       rgba(0,0,0,0.5)),
-    url(./banner.jpg);    
+.hero{ background-image:
+    linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    ),
+    url(./banner.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -74,5 +77,47 @@ body{
     margin-top: 200px;
     font-size: 19px;
     font-weight: bold;
-
 }
+.speakers h2{
+    text-align: center;
+   font-size: 50px;
+   padding-top: 60px;
+  
+}
+
+.container{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   justify-content: center;
+   gap: 22px;
+   padding: 80px 60px;
+}
+.card{
+ background: #fff;
+ border: 1px solid #e5e7eb;
+ border-radius: 12px;
+ overflow: hidden;
+ height: 400px;
+ 
+}
+ .card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+ }
+ .content{
+    padding: 22px;
+ }
+ .content h5{
+    color: #2563eb;
+   padding-bottom: 12px;
+ }
+ .container h3{
+    color: #0d1b2a;
+    padding-bottom: 12px;
+ }
+ .container p{
+    color: #575757;
+    padding-bottom: 12px;
+ }
